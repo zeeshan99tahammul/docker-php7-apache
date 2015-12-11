@@ -1,14 +1,17 @@
 ##########################################################
 # Build image :
-# sudo docker build -t mycinema/web .
+# sudo docker build -t myapp/web .
 
 # Start daemon :
-# sudo docker run -d -ti -p 80:80 -v /media/meillet/Epitech/PHP_my_cinema/www:/var/www/site mycinema/web
+# sudo docker run -d -ti -p 80:80 -v ~/project:/var/www/site myapp/web
+
+# Find container hash :
+# sudo docker ps -a
 
 # Bash :
-# sudo docker exec -ti <container> /bin/bash
+# sudo docker exec -ti <containerHash> /bin/bash
 
-# host : sudo docker inspect <container> | grep "Gateway"
+# host : sudo docker inspect <containerHash> | grep "Gateway"
 # Apache & PHP7
 #########################################################
 
