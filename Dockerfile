@@ -1,17 +1,17 @@
 ##########################################################
 # Build image :
-# sudo docker build -t myapp/web .
+# docker build -t myapp/web .
 
 # Start daemon :
-# sudo docker run -d -ti -p 80:80 -v ~/project:/var/www/site myapp/web
+# docker run -d -ti -p 80:80 -v ~/project:/var/www/site myapp/web
 
 # Find container hash :
-# sudo docker ps -a
+# docker ps -a
 
 # Bash :
-# sudo docker exec -ti <containerHash> /bin/bash
+# docker exec -ti <containerHash> /bin/bash
 
-# host : sudo docker inspect <containerHash> | grep "Gateway"
+# host : docker inspect <containerHash> | grep "Gateway"
 # Apache & PHP7
 #########################################################
 
